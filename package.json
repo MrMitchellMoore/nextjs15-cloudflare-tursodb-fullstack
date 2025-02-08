@@ -8,12 +8,12 @@
     "start": "next start",
     "lint": "next lint",
     "generate": "drizzle-kit generate",
-    "migrate" :"drizzle-kit migrate",
-    "push" :"drizzle-kit push",
-    "pull" :"drizzle-kit pull",
-    "check" :"drizzle-kit check",
-    "up" :"drizzle-kit up",
-    "studio" :"drizzle-kit studio"
+    "migrate": "drizzle-kit migrate",
+    "push": "drizzle-kit push",
+    "pull": "drizzle-kit pull",
+    "check": "drizzle-kit check",
+    "up": "drizzle-kit up",
+    "studio": "drizzle-kit studio"
   },
   "dependencies": {
     "@libsql/client": "^0.14.0",
@@ -30,6 +30,7 @@
     "tailwind-merge": "^3.0.1"
   },
   "devDependencies": {
+    "@cloudflare/next-on-pages": "^1.13.7",
     "@eslint/eslintrc": "^3",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -45,7 +46,8 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "esbuild",
-      "sharp"
+      "sharp",
+      "workerd"
     ]
   }
 }
