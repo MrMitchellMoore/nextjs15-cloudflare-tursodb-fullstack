@@ -1,6 +1,8 @@
 import { getMessagesFromDB } from "@/actions/get-messages-from-database";
 import MessageForm from "@/components/messageForm";
 
+export const runtime = "edge";
+
 export default async function Home() {
   const messages = await getMessagesFromDB();
 
