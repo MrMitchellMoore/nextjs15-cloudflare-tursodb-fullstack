@@ -6,13 +6,23 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate": "drizzle-kit generate",
+    "migrate" :"drizzle-kit migrate",
+    "push" :"drizzle-kit push",
+    "pull" :"drizzle-kit pull",
+    "check" :"drizzle-kit check",
+    "up" :"drizzle-kit up",
+    "studio" :"drizzle-kit studio"
   },
   "dependencies": {
+    "@libsql/client": "^0.14.0",
     "@radix-ui/react-slot": "^1.1.2",
     "@radix-ui/react-toast": "^1.2.6",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.39.2",
     "lucide-react": "^0.475.0",
     "next": "15.1.6",
     "react": "^19.0.0",
@@ -24,6 +34,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "drizzle-kit": "^0.30.4",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
     "postcss": "^8",
@@ -33,6 +44,7 @@
   },
   "pnpm": {
     "onlyBuiltDependencies": [
+      "esbuild",
       "sharp"
     ]
   }
